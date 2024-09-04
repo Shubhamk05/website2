@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All for 1</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>All for 1</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Library</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="upload-form">
+            <h2>Upload Video or Comic</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept="video/*,image/*" required>
+                <input type="text" id="titleInput" name="title" placeholder="Enter Title" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="video-grid" id="contentGrid">
+            <!-- Dynamic content will be inserted here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All for 1. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
